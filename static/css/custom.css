@@ -1,0 +1,11 @@
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-title {
+    display: block;
+    margin: auto;
+    height: 25em;
+    width: auto; 
+}
