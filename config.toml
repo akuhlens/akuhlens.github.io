@@ -2,7 +2,7 @@ baseURL = "http://akuhlens.github.io"
 languageCode = "en-us"
 title = "Andre Kuhlenschmidt"
 theme = "kiss"
-publishdir = "docs"
+publishdir = "publish"
 copyright = "&copy; <a href=\"https://github.com/akuhlens\">Andre Kuhlenschmidt</a> 2017"
 disqusShortname = "akuhlens"
 
