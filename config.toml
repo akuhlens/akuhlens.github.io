@@ -1,0 +1,43 @@
+baseURL = "http://akuhlens.github.io"
+languageCode = "en-us"
+title = "Andre Kuhlenschmidt"
+theme = "kiss"
+publishdir = "docs"
+copyright = "&copy; <a href=\"https://github.com/akuhlens\">Andre Kuhlenschmidt</a> 2017"
+disqusShortname = "akuhlens"
+
+Paginate = 5
+enableRobotsTXT = true
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "Andre" # Title for home page
+poweredby = false # Adds powered by hugo and kiss below Copyright
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+#twitter = "ribicemir"
+github = "akuhlens"
+email = "andre.kuhlenschmidt@gmail.com"
+#linkedin = "ribice"
+#facebook = "ribice"
+#instagram = ""
+#codepen = ""
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
