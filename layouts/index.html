@@ -1,0 +1,51 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="section">
+  <div class="container">
+    <h1 class="title">About Me</h1>
+    <div class="content">
+      <p>
+        I am a computer science PhD student at Indiana University
+        researching programming language theory and implementation.  In
+        particular I am interested in designing programming languages
+        that allow programmers to productively write robust and
+        efficient code.
+      </p>
+      <p>
+        The chief way that I have pursued this goal is researching
+        gradually typed programming language; Gradual languages allow
+        the flexibility of prototyping in a dynamic typed programming
+        language, to seamlessly interoperate with the strong
+        guarantees of a statically typed programming languages.  In
+        theory the strong guarantees of the static type system should
+        allow us to generate efficient code, but in practice the
+        overhead of the implementation techniques for gradual typing
+        have drowned out such gains. My research focuses on fixing
+        this shortcoming.
+      </p>
+    </div>
+
+    <h1 class="title">Posts</h1>
+    {{ range sort .Paginator.Pages }}
+    <article>
+      <h2 class="subtitle is-6">{{ .Date.Format "January 2, 2006" }}</h2>
+      <h2 class="subtitle is-3"><a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ if .Draft }} (work in progress) {{ end }}
+      </h2>
+      <div class="content">
+        {{ .Summary | plainify | safeHTML }}
+        {{ if .Truncated }}
+        <a class="button is-link" href="{{ .Permalink }}" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ partial "pager" . }}
+{{ partial "footer" . }}
