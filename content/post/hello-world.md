@@ -5,3 +5,7 @@ draft: true
 ---
 
 This is my first post.
+
+# A H1 Heading
+
+## A H2 Heading
