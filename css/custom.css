@@ -10,15 +10,19 @@
     width: auto; 
 }
 
-/* add a very specific class to remove the margin on articles in lists */
-.content h1.subtitle,
-.content h2.subtitle,
-.content h3.subtitle,
-.content h4.subtitle,
-.content h5.subtitle {
-    margin: unset;
+.content h3.title.clump {
+    margin-bottom: unset;
+}
+
+.content h4.subtitle.clump {
+    margin: 0em 0em 0em 0em;
     color: black;
 }
+
+.content article {
+    margin: 2em 0em 0em 0em;
+}
+
 
 /* Reduce the */
 .section {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on Andre Kuhlenschmidt</title>
+    <link>http://akuhlens.github.io/personal/</link>
+    <description>Recent content in About Me on Andre Kuhlenschmidt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/akuhlens&#34;&gt;Andre Kuhlenschmidt&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Mon, 11 Dec 2017 07:12:16 -0500</lastBuildDate>
+    
+	<atom:link href="http://akuhlens.github.io/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
