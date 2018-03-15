@@ -13,22 +13,12 @@
     
     
     <item>
-      <title>Research Log: March 13, 2018</title>
-      <link>http://akuhlens.github.io/log/2017-03-13/</link>
-      <pubDate>Tue, 13 Mar 2018 14:55:22 -0400</pubDate>
-      
-      <guid>http://akuhlens.github.io/log/2017-03-13/</guid>
-      <description> Research Goals
-Current Work Notes Future work </description>
-    </item>
-    
-    <item>
       <title>A Summary of my February</title>
       <link>http://akuhlens.github.io/personal/log/2017-03-02/</link>
       <pubDate>Fri, 02 Mar 2018 10:00:50 -0500</pubDate>
       
       <guid>http://akuhlens.github.io/personal/log/2017-03-02/</guid>
-      <description>This last month was really hard. I got a paper rejected from a vary prestigious conference after getting really good reviews; My grandfather (fondly referred to as oldman) passed on after spending the last 3 months of his life trapped in a nursing home; and I didn&amp;rsquo;t get the internship that I applied for. Despite, all of this the last month has made me really hopeful. I have successfully lost 12ish pounds this year, maintained a reasonable exercise routine, taken over the majority of the cooking/shopping from my wife, and how found the energy to decide that I want to learn Japanese despite the fact that I really don&amp;rsquo;t have the time.</description>
+      <description>This last month was really hard. I got a paper rejected from a PLDI after getting really good reviews; My grandfather (fondly referred to as old man) passed on after spending the last 3 months of his life trapped in a nursing home; and I didn&amp;rsquo;t get the internship that I applied for. Despite, all of this the last month has made me really hopeful. I have successfully lost 12ish pounds this year, maintained a reasonable exercise routine, taken over the majority of the cooking/shopping from my wife, and how found the energy to decide that I want to learn Japanese despite the fact that I really don&amp;rsquo;t have the time.</description>
     </item>
     
     <item>
@@ -38,6 +28,16 @@ Current Work Notes Future work </description>
       
       <guid>http://akuhlens.github.io/log/2017-03-02/</guid>
       <description>My current research goal is to show that gradual typing can be implemented with good runtime and space performance. In particular statically typed programs in a gradual language should have very little overhead over the same program in a statically typed with a similar feature set. Conversely, dynamically typed programs should have performance on par with dynamically typed programs. To prove this hypothesis, I am building a prototype ahead of time compiler for a statically typed programming language.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://akuhlens.github.io/personal/post/hello-world/</link>
+      <pubDate>Fri, 01 Dec 2017 21:32:04 -0500</pubDate>
+      
+      <guid>http://akuhlens.github.io/personal/post/hello-world/</guid>
+      <description>&lt;p&gt;This is my first blog post.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

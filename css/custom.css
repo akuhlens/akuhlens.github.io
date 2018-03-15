@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css');
 
 .img-circle {
     border-radius: 50%;
@@ -28,3 +30,13 @@
 .section {
     padding: 20px 20px;
 }
+
+
+body {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Noto Sans', "Rounded Mplus 1c", sans-serif;
+}
+

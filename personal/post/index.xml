@@ -12,5 +12,15 @@
 	<atom:link href="http://akuhlens.github.io/personal/post/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Hello World</title>
+      <link>http://akuhlens.github.io/personal/post/hello-world/</link>
+      <pubDate>Fri, 01 Dec 2017 21:32:04 -0500</pubDate>
+      
+      <guid>http://akuhlens.github.io/personal/post/hello-world/</guid>
+      <description>&lt;p&gt;This is my first blog post.
+&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
