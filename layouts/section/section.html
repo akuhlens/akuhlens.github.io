@@ -1,0 +1,9 @@
+{{ define "listing" }}
+  {{ if (getenv $.Site.Params.debug.symbol) }}
+    Using section/section listing
+  {{ end }}
+  {{ range .Data.Pages }}
+    {{ partial "page-listing" . }}
+  {{ end }}
+{{ end }}
+

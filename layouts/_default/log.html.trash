@@ -1,0 +1,4 @@
+{{ define "debug" }}
+  Using _default/log debug
+{{ end }}
+

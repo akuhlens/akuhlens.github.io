@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css');
 
 .img-circle {
     border-radius: 50%;
@@ -10,17 +12,35 @@
     width: auto; 
 }
 
-/* add a very specific class to remove the margin on articles in lists */
-.content h1.subtitle,
-.content h2.subtitle,
-.content h3.subtitle,
-.content h4.subtitle,
-.content h5.subtitle {
-    margin: unset;
+.content h3.title.clump {
+    margin-bottom: unset;
+}
+
+.content h4.subtitle.clump {
+    margin: 0em 0em 0em 0em;
     color: black;
 }
+
+.content article {
+    margin: 2em 0em 0em 0em;
+}
+
 
 /* Reduce the */
 .section {
     padding: 20px 20px;
+}
+
+
+body {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Noto Sans', "Rounded Mplus 1c", sans-serif;
+}
+
+.content table td, .content table th {
+    text-align: center;
+    vertical-align: center;
 }

@@ -1,0 +1,10 @@
+{{ define "debug" }}
+  Using _default/post debug
+{{ end }}
+{{ define "disqus" }}
+  {{ if (getenv $.Site.Params.debug.symbol) }}
+    Using default disqus
+  {{ end }}
+  </br>
+  {{ partial "disqus" . }}
+{{ end }}

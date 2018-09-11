@@ -1,0 +1,5 @@
+{{ define "listing" }}
+  {{ range .Data.Pages }}
+    {{ partial "page-listing" . }}
+  {{ end }}
+{{ end }}

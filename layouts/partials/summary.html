@@ -1,0 +1,18 @@
+{{ if .Summary | and (index .Params "use-summary" | default true) }}
+<div class="content">
+  {{ .Summary }}
+  {{ if .Truncated }}
+  <a class="is-link"
+     href="{{ .Permalink }}">
+    ...
+  </a>
+  {{ end }}
+  <!--   <a class="button is-link" href="{{ .Permalink }}" style="height:28px"> -->
+  <!--     Read more -->
+  <!--     <span class="icon is-small"> -->
+  <!--       <i class="fa fa-angle-double-right"></i> -->
+  <!--   </span> -->
+  <!-- </a> -->
+  <!--  -->
+</div>
+{{ end }}

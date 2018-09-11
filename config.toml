@@ -36,7 +36,11 @@ linkedin = "akuhlens"
 #codepen = ""
 
 [taxonomies]
-tag ="tags"
+tags = "tags"
 
 [blackfriday]
 hrefTargetBlank = true
+
+[params.debug]
+symbol = "DEBUG"
+

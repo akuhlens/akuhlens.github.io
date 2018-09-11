@@ -1,44 +1,41 @@
 {{ partial "header" . }}
+<body>
 {{ partial "nav" . }}
 <section class="section">
   <div class="container">
     
     {{partial "banner" . }}
-    
-    <h1 class="title">{{ .Title }}</h1>
     <div class="content">
-
+      <h1 class="title">{{ .Title }}</h1>
       {{ .Content }}
 
-      {{ if .Data.Pages }}
-        <h1 class="posts">Posts</h1>
-        {{ range sort .Paginator.Pages }}
-        <article>
-          <h4 class="subtitle is-6 clump">
-            {{ .Date.Format "January 2, 2006" }}
-          </h4>
-          <h3 class="subtitle clump">
-            <a href="{{ .Permalink }}">
-              {{ .Title }}
-            </a>
-            {{ if .Draft }} (work in progress) {{ end }}
-          </h3>
-          <div class="content">
-            {{ .Summary | plainify | safeHTML }}
-            {{ if .Truncated }} ... {{ end }}
-            <!--   <a class="button is-link" href="{{ .Permalink }}" style="height:28px"> -->
-            <!--     Read more -->
-            <!--     <span class="icon is-small"> -->
-            <!--       <i class="fa fa-angle-double-right"></i> -->
-            <!--   </span> -->
-            <!-- </a> -->
-            <!--  -->
-          </div>
-        </article>
-        {{ end }}
+      {{ range where .Sections "Section" "!=" "personal" }}
+
+      <!-- A Hack to get the correct formatting -->
+      <h2>
+        <a href="{{ .Permalink }}">
+          <h2>{{ .Title }}</h2>
+        </a>
+      </h2>
+      
+      {{ partial "summary" . }}
+      
+      {{ range first 5 .Data.Pages }}
+      {{ partial "page-listing" . }}
       {{ end }}
+
+      {{ if gt (len .Data.Pages) 5 }}
+      <article>
+      <h3 class="title is-5">
+        <a href="{{ .Permalink }}">
+          All {{ .Title }}
+        </a>
+      </h3>
+      </article>
+      {{ end }}
+      {{ end }}
+      
     </div>
   </div>
 </section>
-{{ partial "pager" . }}
 {{ partial "footer" . }}

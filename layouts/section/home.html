@@ -1,0 +1,39 @@
+{{ define "debug" }}
+  Using section/home
+{{ end }}
+
+{{ define "listing" }}
+  {{ if (getenv $.Site.Params.debug.symbol) }}
+     using section/home listing
+  {{ end }}
+
+  {{ range .Sections }}
+    <!-- A Hack to get the correct formatting -->
+    <h2>
+      <a href="{{ .Permalink }}">
+        <h2>{{ .Title }}</h2>
+      </a>
+    </h2>
+    {{ partial "summary" . }}
+
+    {{ if .Data.Pages }}
+      {{ range first 5 .Data.Pages }}
+        {{ partial "page-listing" . }}
+      {{ end }}
+      
+      {{ if gt (len .Data.Pages) 5 }}
+        <article>
+          <h3 class="title is-5">
+            <a href="{{ .Permalink }}">
+              All {{ .Title }}
+            </a>
+          </h3>
+        </article>
+      {{ end }}
+    {{ else }}
+      <p> Content coming soon. </p>
+    {{ end }}
+      
+  {{ end }}
+{{ end }}
+

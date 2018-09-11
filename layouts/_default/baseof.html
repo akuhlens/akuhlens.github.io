@@ -1,0 +1,43 @@
+{{ partial "begin" . }}
+{{ partial "header" . }}
+<body>
+  {{ if (getenv $.Site.Params.debug.symbol) }}
+    Using _default/baseof.html
+    </br>
+    {{ block "debug" . }}
+      Using _default/baseof.html debug
+    {{ end }}
+  {{ end }}
+  
+  {{ partial "nav" . }}
+  <section class="section">
+    <div class="container">
+      {{partial "banner" . }}
+      <div class="content">
+        
+        {{ block "main" . }}
+        {{ if (getenv $.Site.Params.debug.symbol) }}
+        Using default main
+        {{ end }}
+        <h1 class="title">{{ .Title }}</h1>
+        {{ .Content }}
+        {{ end }}
+          
+        {{ block "listing" . }}
+          {{ if (getenv $.Site.Params.debug.symbol) }}
+            Using default listing
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ block "disqus" . }}
+    {{ if (getenv $.Site.Params.debug.symbol) }}
+      Using default disqus
+    {{ end }}
+  {{ end }}
+
+  {{ partial "footer" . }}
+</body>
+</html>

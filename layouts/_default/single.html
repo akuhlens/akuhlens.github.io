@@ -1,0 +1,9 @@
+{{ define "debug" }}
+  {{/* Note Removing this debugging block will
+       cause the template engine to treat this file
+       as a template instead of a definitions file. */}}
+  {{ if (getenv $.Site.Params.debug.symbol) }}
+    using _default/single.html
+  {{ end }}
+{{ end }}
+
