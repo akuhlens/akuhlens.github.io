@@ -8,13 +8,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
-  <title>Tags | Andre Kuhlenschmidt</title>
+  <title>First Research Log | Andre Kuhlenschmidt</title>
   
-  <meta property='og:title' content='Tags - Andre Kuhlenschmidt'>
-<meta property='og:description' content=''>
-<meta property='og:url' content='http://akuhlens.github.io/tags/'>
+  <meta property='og:title' content='First Research Log - Andre Kuhlenschmidt'>
+<meta property='og:description' content='My current research goal is to show that gradual typing can be implemented with good runtime and space performance. In particular statically typed programs in a gradual language should have very little overhead over the same program in a statically typed with a similar feature set. Conversely, dynamically typed programs should have performance on par with dynamically typed programs. To prove this hypothesis, I am building a prototype ahead of time compiler for a statically typed programming language.'>
+<meta property='og:url' content='http://akuhlens.github.io/log/2018-03-02/'>
 <meta property='og:site_name' content='Andre Kuhlenschmidt'>
-<meta property='og:type' content='website'><meta property='og:image' content='https://www.gravatar.com/avatar/106021a29eb2ffaaea61d9f9fabdb191?s=256'><meta property='article:section' content='Tags'><meta property='og:updated_time' content='2018-04-10T09:53:14-04:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@'><meta name='twitter:creator' content='@'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/106021a29eb2ffaaea61d9f9fabdb191?s=256'><meta property='article:section' content='Log'><meta property='article:published_time' content='2018-03-02T09:13:56-05:00'/><meta property='article:modified_time' content='2018-03-02T09:13:56-05:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@'><meta name='twitter:creator' content='@'>
   <link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='/css/custom.css'></head>
 
 
@@ -67,49 +67,46 @@
         
         
         
-        <h1 class="title">Tags</h1>
+        <h1 class="title">First Research Log</h1>
         
+
+<p>My current research goal is to show that gradual typing can be
+implemented with good runtime and space performance. In particular
+statically typed programs in a gradual language should have very
+little overhead over the same program in a statically typed with a
+similar feature set. Conversely, dynamically typed programs should
+have performance on par with dynamically typed programs. To prove this
+hypothesis, I am building a prototype ahead of time compiler for a
+statically typed programming language.</p>
+
+<h2 id="current-work">Current Work</h2>
+
+<p>My work this week has been focused on coming up with an idea of how
+recursive types could be implemented with coercions. From a language
+design standpoint I have chosen the recursive type to be
+equi-recursive. This means that a μ node and it&rsquo;s unfolding are
+definitionally equal (anywhere one is valid so is the other). I think
+in the future we will want to compile this to a iso-recursive
+intermediate language, because by doing so we may be able to apply
+recursive coercions lazily.</p>
+
+<p>So far I have an interpreter that works for the benchmark that I would
+like to compile. This includes the rules necessary for converting type
+based casts into coercions, applying coercions, and composing
+coercions to make them space efficient. More on that
+later. Formalization and proofs will come soon.</p>
+
+<p>I also recently started porting our compiler to have an LLVM backend
+by using the Sham library a friend of mine is writing. This should
+eventually support tail-call optimization which means we can show
+how to introduce low-overhead space-efficient tail-call casts. More
+on this later.</p>
+
         
           
         
-  
-    <article>
-  <h3 class="title is-5 clump">
-    <a href="http://akuhlens.github.io/tags/japanese/">
-      Japanese
-    </a>
-    
-  </h3>
-  <h4 class="subtitle is-6 clump">
-    March 15, 2018
-  </h4>
-  
-<div class="content">
-  <p>I am trying to learn Japanese, and one way that helps me learn is to
-synthesize information from the lessons that I have learned.  Here is
-an outline of my learning goals and collection of articles that synthesize
-what I learned.
-</p>
-  
-  <a class="is-link"
-     href="http://akuhlens.github.io/tags/japanese/">
-    ...
-  </a>
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-</article>
-
-  
-
+          
+        
       </div>
     </div>
   </section>

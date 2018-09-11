@@ -40,3 +40,7 @@ body {
     font-family: 'Noto Sans', "Rounded Mplus 1c", sans-serif;
 }
 
+.content table td, .content table th {
+    text-align: center;
+    vertical-align: center;
+}

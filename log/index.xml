@@ -14,10 +14,10 @@
     
     <item>
       <title>First Research Log</title>
-      <link>http://akuhlens.github.io/log/2017-03-02/</link>
+      <link>http://akuhlens.github.io/log/2018-03-02/</link>
       <pubDate>Fri, 02 Mar 2018 09:13:56 -0500</pubDate>
       
-      <guid>http://akuhlens.github.io/log/2017-03-02/</guid>
+      <guid>http://akuhlens.github.io/log/2018-03-02/</guid>
       <description>My current research goal is to show that gradual typing can be implemented with good runtime and space performance. In particular statically typed programs in a gradual language should have very little overhead over the same program in a statically typed with a similar feature set. Conversely, dynamically typed programs should have performance on par with dynamically typed programs. To prove this hypothesis, I am building a prototype ahead of time compiler for a statically typed programming language.</description>
     </item>
     
