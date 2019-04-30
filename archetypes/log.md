@@ -1,7 +1,7 @@
 ---
 title: "Research Log: {{ dateFormat "January 2, 2006" .Date }}"
 date: {{ .Date }}
-draft: False
+draft: True
 use-summary: False
 layout: log
 ---

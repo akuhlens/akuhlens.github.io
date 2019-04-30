@@ -15,3 +15,4 @@ debug:
 
 clean:
 	find . -name "*\~" -delete
+	find . -name "*#" -delete

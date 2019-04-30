@@ -23,3 +23,7 @@ this shortcoming.
 
 If you wish to know more about me, I encourage you to check
 out my [CV](https://github.com/akuhlens/cv/raw/master/cv.pdf).
+
+## Publications
+
+- [Towards Efficient Gradual Typing for Structural Types](paper/pldi19.pdf)
