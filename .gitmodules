@@ -1,6 +1,4 @@
 [submodule "themes/kiss"]
 	path = themes/kiss
 	url = git@github.com:ribice/kiss.git
-[submodule "publish"]
-	path = publish
-	url = git@github.com:akuhlens/akuhlens.github.io.git
+
